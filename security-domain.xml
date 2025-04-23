@@ -1,0 +1,9 @@
+                    <security-domain name="JBTravel">
+                        <authentication>
+                            <login-module code="Database" flag="required">
+                                <module-option name="dsJndiName" value="java:jboss/JBTravelDatasource"/>
+                                <module-option name="principalsQuery" value="select password from JBTRAVEL.USER where username=?"/>
+                                <module-option name="rolesQuery" value="select null,'Roles' from JBTRAVEL.USER where username=?"/>
+                            </login-module>
+                        </authentication>
+                    </security-domain>

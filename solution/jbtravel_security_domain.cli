@@ -1,0 +1,1 @@
+/profile=default/subsystem=security/security-domain=JBTravel:add(authentication=[{"code"=>"Database","flag"=>"required","module-options"=>[("dsJndiName"=>"java:jboss/JBTravelDatasource"),("principalsQuery"=>"select password from JTRAVEL.USER where username=?"),("rolesQuery"=>"select null,'Roles' from JTRAVEL.USER where username=?")]}])
